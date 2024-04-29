@@ -1,0 +1,77 @@
+/* WeatherDashboard.css */
+
+.weather-dashboard {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3yGg5boZJ-v-oPkZr93mwE_y3Qo1Mm1Tn3w&s');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set height to full viewport height */
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Set text color to white */
+}
+
+.dashboard-header h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px; /* Increase font size */
+    margin: 0;
+}
+
+.dashboard-content {
+    background-color: transparent; /* Set background color to transparent */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: none; /* Remove box shadow */
+    margin-top: 20px;
+    width: 100%; /* Set width to 100% of the viewport */
+    max-width: 800px; /* Set maximum width */
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr; /* Set grid to one column for horizontal separation */
+    gap: 20px; /* Add gap between tiles */
+}
+
+.weather-info-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set tile background color to semi-transparent */
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.weather-info-item:hover {
+    transform: translateY(-5px);
+}
+
+.weather-info-item h3 {
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px; /* Increase font size */
+    margin-bottom: 15px; /* Increase margin */
+}
+
+.weather-info-item p {
+    color: #666666;
+    font-weight: bold;
+    font-size: 22px; /* Increase font size */
+    margin: 0;
+}
+
+.no-data {
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
