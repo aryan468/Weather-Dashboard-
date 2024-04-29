@@ -6,12 +6,8 @@ import './SearchBar.css';
 const SearchBar = ({ onSearch }) => {
     const [city, setCity] = useState('');
 
-    const handleChange = (event) => {
-        setCity(event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
         if (city.trim() !== '') {
             onSearch(city.trim());
         }
@@ -21,9 +17,9 @@ const SearchBar = ({ onSearch }) => {
         <form className="search-form" onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Enter city name"
                 value={city}
-                onChange={handleChange}
+                onChange={(e) => setCity(e.target.value)}
+                placeholder="Enter city name..."
                 className="search-input"
             />
             <button type="submit" className="search-button">

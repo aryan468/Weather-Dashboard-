@@ -22,7 +22,7 @@
 .dashboard-header h2 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 32px; /* Increase font size */
+    font-size: 28px;
     margin: 0;
 }
 
@@ -38,7 +38,7 @@
 
 .weather-details {
     display: grid;
-    grid-template-columns: 1fr; /* Set grid to one column for horizontal separation */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px; /* Add gap between tiles */
 }
 
@@ -58,14 +58,14 @@
     color: #333333;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px; /* Increase font size */
-    margin-bottom: 15px; /* Increase margin */
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .weather-info-item p {
     color: #666666;
     font-weight: bold;
-    font-size: 22px; /* Increase font size */
+    font-size: 18px;
     margin: 0;
 }
 
